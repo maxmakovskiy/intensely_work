@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Intensely work",
+  "version": "1.0",
+
+  "description": "Block youtube while learning proccess was doing",
+  "icons": {
+    "48": "border-48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "example@init.ee",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
